@@ -1,29 +1,42 @@
 {
   "hero": {
-    "title": "John Developer",
-    "tagline": "Full-Stack Developer & Technical Writer",
-    "subtitle": "I build accessible, pixel-perfect digital experiences that blend thoughtful design with robust engineering.",
-    "image": "/images/hero-profile.jpg",
+    "title": "Umaiya Mim",
+    "tagline": "Communicating Clarity, Sustaining Safety",
+    "subtitle": "Combining environmental awareness, disaster resilience, and effective technical communication to build a safer, informed, and sustainable future.",
+    "image": "/hero-profile.jpg",
     "buttons": [
       { "text": "Read My Blog", "href": "/blog", "variant": "primary" },
       { "text": "Contact Me", "href": "#contact", "variant": "secondary" }
     ]
   },
   "about": {
-    "name": "John Developer",
-    "education": "BSc Computer Science, Tech University",
-    "bio": "I'm a passionate full-stack developer with 5+ years of experience building scalable web applications. I specialize in React, Next.js, and Node.js, with a keen eye for user experience and performance optimization.",
-    "image": "/images/about-profile.jpg",
+    "name": "Umaiya Tasdid Mim",
+    "education": "BSc Environmental science and disaster management, Potuakhali Science and Technology University",
+    "bio": "I am an environmental scientist and disaster management professional with a passion for technical writing and sustainability. With over 5 years of experience in environmental impact assessments, disaster risk management, and technical communication, I strive to bridge the gap between complex scientific concepts and practical applications. My goal is to promote sustainable practices and enhance community resilience through clear and effective communication.",
+    "image": "/hero-profile.jpg",
     "achievements": [
-      "Led development of 3 major SaaS platforms",
-      "Contributed to 15+ open source projects",
-      "Speaker at 5 tech conferences",
-      "Mentored 20+ junior developers"
+      "In Environmental Science and Disaster Management",
+      "Completed in Environmental Impact Assessments and Disaster Risk Reduction",
+      "Articles and reports on sustainability and disaster resilience"
     ],
-    "skills": ["React", "Next.js", "TypeScript", "Node.js", "PostgreSQL", "AWS", "Docker", "GraphQL"]
+    "skills": [
+      "Environmental Impact Assessment  ",
+      "Disaster Risk Management",
+      "Technical Writing",
+      "Sustainability Planning",
+      "GIS Mapping",
+      "Data Analysis"
+    ]
   },
   "featuredPosts": [1, 2, 3],
-  "categories": ["Tech", "Career", "Tutorial", "Web Development", "JavaScript", "React"],
+  "categories": [
+    "Islam",
+    "Environment",
+    "Disaster Management",
+    "Sustainability",
+    "Technology",
+    "Motivation"
+  ],
   "recentPosts": [
     {
       "id": 4,

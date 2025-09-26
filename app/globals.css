@@ -43,13 +43,13 @@
 
 .dark {
   /* Using #19183B as background and primary color for dark mode */
-  --background: #33A1E0;
+  --background: #08073e;
   --foreground: oklch(0.98 0.005 240);
   --card: #1a1b3a;
   --card-foreground: oklch(0.98 0.005 240);
   --popover: #19183b;
   --popover-foreground: oklch(0.98 0.005 240);
-  --primary: #2a2d5f;
+  --primary: #abafff;
   --primary-foreground: oklch(0.98 0.005 240);
   --secondary: #1e1f3d;
   --secondary-foreground: oklch(0.9 0.005 240);
