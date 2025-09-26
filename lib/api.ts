@@ -1,6 +1,6 @@
 // API utility functions for the blog
 const BASE_URL =
-  process.env.NEXT_PUBLIC_BASE_URL || (typeof window !== "undefined" ? window.location.origin : "http://localhost:3000")
+  process.env.NEXT_PUBLIC_BASE_URL || (typeof window !== "undefined" ? window.location.origin : "http://localhost:5000")
 
 export interface BlogPost {
   id: number
@@ -45,19 +45,19 @@ export async function login(email: string, password: string): Promise<AuthRespon
   return mockLogin(email, password)
 
   // Real implementation would be:
-  // const response = await fetch(`${BASE_URL}/api/v1/auth/login`, {
-  //   method: 'POST',
-  //   headers: {
-  //     'Content-Type': 'application/json',
-  //   },
-  //   body: JSON.stringify({ email, password }),
-  // })
+  const response = await fetch(`${BASE_URL}/api/v1/auth/login`, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify({ email, password }),
+  })
 
-  // if (!response.ok) {
-  //   throw new Error('Login failed')
-  // }
+  if (!response.ok) {
+    throw new Error('Login failed')
+  }
 
-  // return response.json()
+  return response.json()
 }
 
 // Blog functions
@@ -98,7 +98,7 @@ export async function getBlogBySlug(slug: string): Promise<BlogPost> {
 export async function getBlogStats(): Promise<BlogStats> {
   try {
     const controller = new AbortController()
-    const timeoutId = setTimeout(() => controller.abort(), 5000) // 5 second timeout
+    const timeoutId = setTimeout(() => controller.abort(), 5000)
 
     const response = await fetch(`${BASE_URL}/api/v1/blogs/count`, {
       headers: {
@@ -123,12 +123,19 @@ export async function getBlogStats(): Promise<BlogStats> {
 
     const data = await response.json()
 
-    // Validate the response structure
-    if (typeof data.totalPosts !== "number" || typeof data.totalViews !== "number") {
+    // Correct way to access
+    const stats = data.data
+    if (
+      typeof stats.totalPosts !== "number" ||
+      typeof stats.totalWebViews !== "number"
+    ) {
       throw new Error("Invalid response structure")
     }
 
-    return data
+    return {
+      totalPosts: stats.totalPosts,
+      totalViews: stats.totalWebViews,
+    }
   } catch (error) {
     if (error instanceof Error) {
       console.warn("Blog stats API unavailable:", error.message)
@@ -136,7 +143,6 @@ export async function getBlogStats(): Promise<BlogStats> {
       console.warn("Blog stats API unavailable:", error)
     }
 
-    // Always return mock data as fallback - don't re-throw the error
     return {
       totalPosts: 25,
       totalViews: 15420,

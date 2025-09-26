@@ -3,7 +3,7 @@
 import { useState, useEffect, Suspense } from "react"
 import { useSearchParams } from "next/navigation"
 import { Navbar } from "@/components/navbar"
-import { getBlogStats, type BlogPost } from "@/lib/api"
+import { getBlogs, getBlogStats, type BlogPost } from "@/lib/api"
 import { Breadcrumb } from "@/components/seo/breadcrumb"
 
 function BlogContent() {
@@ -20,36 +20,16 @@ function BlogContent() {
   const categories = ["all", "Tech", "Career", "Tutorial", "Web Development", "JavaScript", "React"]
 
   // Mock data for demonstration
-  const mockPosts: BlogPost[] = [
-    {
-      id: 1,
-      title: "Building Scalable React Applications with TypeScript",
-      slug: "building-scalable-react-applications-typescript",
-      content: "",
-      summary:
-        "Learn the best practices for structuring large React applications with TypeScript, proper state management, and component architecture.",
-      thumbnail: "/react-typescript-code-editor.jpg",
-      category: "React",
-      tags: ["React", "TypeScript", "Architecture"],
-      views: 2450,
-      isFeatured: true,
-      status: "published",
-      createdAt: "2024-01-15T00:00:00Z",
-      updatedAt: "2024-01-15T00:00:00Z",
-      author: {
-        id: 1,
-        name: "John Developer",
-        avatar: "/developer-avatar.png",
-      },
-    },
-  ]
-
+  const mockPosts: BlogPost[] =[] ;
+  
+  // console.log(blogStats)
   useEffect(() => {
     async function loadData() {
       try {
         // Load blog stats
         try {
           const stats = await getBlogStats()
+          console.log(stats)
           setBlogStats(stats)
         } catch (error) {
           console.error("Failed to load blog stats:", error)
@@ -68,6 +48,8 @@ function BlogContent() {
 
     loadData()
   }, [])
+
+  
 
   if (loading) {
     return (
