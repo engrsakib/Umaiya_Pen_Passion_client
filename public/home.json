@@ -12,7 +12,7 @@
   "about": {
     "name": "Umaiya Tasdid Mim",
     "education": "BSc Environmental science and disaster management, Potuakhali Science and Technology University",
-    "bio": "I am an environmental scientist and disaster management professional with a passion for technical writing and sustainability. With over 5 years of experience in environmental impact assessments, disaster risk management, and technical communication, I strive to bridge the gap between complex scientific concepts and practical applications. My goal is to promote sustainable practices and enhance community resilience through clear and effective communication.",
+    "bio": "I am a first-year undergraduate student in Environmental Science and Disaster Management, passionate about sustainability, climate action, and technical writing. I am eager to learn about environmental challenges and how disaster management can protect communities. I enjoy simplifying complex ideas into clear messages and aim to grow as a professional who can contribute to a safer, greener future.",
     "image": "/hero-profile.jpg",
     "achievements": [
       "In Environmental Science and Disaster Management",
@@ -56,30 +56,30 @@
   "newsletter": {
     "cta": "Stay updated with my latest articles and insights",
     "subtitle": "Get weekly updates on web development, career tips, and industry trends.",
-    "image": "/images/newsletter-bg.jpg"
+    "image": "https://media.istockphoto.com/id/1460740442/photo/businessman-sending-email-by-laptop-computer-to-customer-business-contact-and-communication.jpg?s=2048x2048&w=is&k=20&c=3kqmgIvKSK2vjnm0iMEL0bZqVdKZeqHDEJjJrQ01q6U"
   },
   "testimonials": [
     {
-      "quote": "John's technical expertise and mentorship have been invaluable to our team's growth.",
-      "author": "Sarah Chen, Senior Developer"
+      "quote": "If your memes are purely humorous, try occasionally including emotional, philosophical, or reflective elements to create more impact.",
+      "author": "Md. Nazmus Sakib, Backend Engineer"
     },
     {
-      "quote": "His blog posts are always insightful and practical. A must-read for any developer.",
-      "author": "Mike Rodriguez, Tech Lead"
+      "quote": "Enhancing visual creativity and subtle storytelling can help express the human experience more effectively.",
+      "author": "Fatema Busra, Social Activist"
     },
     {
-      "quote": "Working with John was a game-changer for our project. His attention to detail is exceptional.",
-      "author": "Emily Johnson, Product Manager"
+      "quote": "Working with MIM was a game-changer for our project. His attention to detail is exceptional.",
+      "author": "Arifur Rahman, Project Manager"
     }
   ],
   "contact": {
-    "email": "john@example.com",
-    "phone": "+1 (555) 123-4567",
-    "address": "San Francisco, CA",
+    "email": "",
+    "phone": "",
+    "address": "Magura, Khulna, Bangladesh",
     "social": {
-      "github": "https://github.com/johndeveloper",
-      "linkedin": "https://linkedin.com/in/johndeveloper",
-      "twitter": "https://twitter.com/johndeveloper"
+      "github": "",
+      "linkedin": "",
+      "twitter": ""
     }
   }
 }
