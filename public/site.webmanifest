@@ -1,0 +1,25 @@
+{
+  "name": "Personal Blog - John Developer",
+  "short_name": "Personal Blog",
+  "description": "Full-stack developer sharing insights on React, TypeScript, and modern web development",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0f172a",
+  "theme_color": "#0f172a",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "categories": ["productivity", "education", "technology"],
+  "lang": "en-US",
+  "dir": "ltr"
+}

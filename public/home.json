@@ -1,0 +1,72 @@
+{
+  "hero": {
+    "title": "John Developer",
+    "tagline": "Full-Stack Developer & Technical Writer",
+    "subtitle": "I build accessible, pixel-perfect digital experiences that blend thoughtful design with robust engineering.",
+    "image": "/images/hero-profile.jpg",
+    "buttons": [
+      { "text": "Read My Blog", "href": "/blog", "variant": "primary" },
+      { "text": "Contact Me", "href": "#contact", "variant": "secondary" }
+    ]
+  },
+  "about": {
+    "name": "John Developer",
+    "education": "BSc Computer Science, Tech University",
+    "bio": "I'm a passionate full-stack developer with 5+ years of experience building scalable web applications. I specialize in React, Next.js, and Node.js, with a keen eye for user experience and performance optimization.",
+    "image": "/images/about-profile.jpg",
+    "achievements": [
+      "Led development of 3 major SaaS platforms",
+      "Contributed to 15+ open source projects",
+      "Speaker at 5 tech conferences",
+      "Mentored 20+ junior developers"
+    ],
+    "skills": ["React", "Next.js", "TypeScript", "Node.js", "PostgreSQL", "AWS", "Docker", "GraphQL"]
+  },
+  "featuredPosts": [1, 2, 3],
+  "categories": ["Tech", "Career", "Tutorial", "Web Development", "JavaScript", "React"],
+  "recentPosts": [
+    {
+      "id": 4,
+      "title": "Building Scalable React Applications",
+      "summary": "Learn the best practices for structuring large React applications with proper state management and component architecture.",
+      "date": "2024-01-15",
+      "category": "React"
+    },
+    {
+      "id": 5,
+      "title": "The Future of Web Development",
+      "summary": "Exploring emerging trends and technologies that will shape the future of web development in 2024 and beyond.",
+      "date": "2024-01-10",
+      "category": "Tech"
+    }
+  ],
+  "newsletter": {
+    "cta": "Stay updated with my latest articles and insights",
+    "subtitle": "Get weekly updates on web development, career tips, and industry trends.",
+    "image": "/images/newsletter-bg.jpg"
+  },
+  "testimonials": [
+    {
+      "quote": "John's technical expertise and mentorship have been invaluable to our team's growth.",
+      "author": "Sarah Chen, Senior Developer"
+    },
+    {
+      "quote": "His blog posts are always insightful and practical. A must-read for any developer.",
+      "author": "Mike Rodriguez, Tech Lead"
+    },
+    {
+      "quote": "Working with John was a game-changer for our project. His attention to detail is exceptional.",
+      "author": "Emily Johnson, Product Manager"
+    }
+  ],
+  "contact": {
+    "email": "john@example.com",
+    "phone": "+1 (555) 123-4567",
+    "address": "San Francisco, CA",
+    "social": {
+      "github": "https://github.com/johndeveloper",
+      "linkedin": "https://linkedin.com/in/johndeveloper",
+      "twitter": "https://twitter.com/johndeveloper"
+    }
+  }
+}
