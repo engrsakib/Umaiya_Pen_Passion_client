@@ -80,11 +80,11 @@ export default function HomePage() {
           <div className="text-center space-y-4">
             <div className="flex items-center justify-center space-x-2">
               <div className="h-8 w-8 bg-primary rounded-lg flex items-center justify-center">
-                <span className="text-primary-foreground font-bold text-sm">JD</span>
+                <span className="text-primary-foreground font-bold text-sm">UM</span>
               </div>
-              <span className="font-semibold text-lg">John Developer</span>
+              <span className="font-semibold text-lg">Umaiya Pen and Passion</span>
             </div>
-            <p className="text-muted-foreground">© 2025 John Developer. All rights reserved.</p>
+            <p className="text-muted-foreground">© 2025 Umaiya Pen and Passion. All rights reserved.</p>
             <div className="flex items-center justify-center gap-6 text-sm text-muted-foreground">
               <a href="/privacy" className="hover:text-primary transition-colors">
                 Privacy Policy

@@ -1,4 +1,5 @@
 import type React from "react"
+import "./globals.css"
 import type { Metadata } from "next"
 import { Inter, JetBrains_Mono } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
@@ -6,7 +7,6 @@ import { SpeedInsights } from "@vercel/speed-insights/next"
 import { ThemeProvider } from "@/components/theme-provider"
 import { StructuredData } from "@/components/seo/structured-data"
 import { Suspense } from "react"
-import "./globals.css"
 
 const inter = Inter({
   subsets: ["latin"],
@@ -92,6 +92,7 @@ export const metadata: Metadata = {
     yahoo: "your-yahoo-verification-code",
   },
 }
+
 
 export default function RootLayout({
   children,

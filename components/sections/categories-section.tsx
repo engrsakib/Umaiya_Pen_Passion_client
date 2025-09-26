@@ -9,12 +9,12 @@ interface CategoriesSectionProps {
 
 // Mock category data with post counts
 const categoryData = [
-  { name: "Tech", count: 15, color: "bg-blue-500/10 text-blue-700 dark:text-blue-300" },
-  { name: "Career", count: 8, color: "bg-green-500/10 text-green-700 dark:text-green-300" },
-  { name: "Tutorial", count: 12, color: "bg-purple-500/10 text-purple-700 dark:text-purple-300" },
-  { name: "Web Development", count: 20, color: "bg-orange-500/10 text-orange-700 dark:text-orange-300" },
-  { name: "JavaScript", count: 18, color: "bg-yellow-500/10 text-yellow-700 dark:text-yellow-300" },
-  { name: "React", count: 14, color: "bg-cyan-500/10 text-cyan-700 dark:text-cyan-300" },
+  { name: "Islam", count: 15, color: "bg-blue-500/10 text-blue-700 dark:text-blue-300" },
+  { name: "Environment", count: 8, color: "bg-green-500/10 text-green-700 dark:text-green-300" },
+  { name: "Disaster Management", count: 12, color: "bg-purple-500/10 text-purple-700 dark:text-purple-300" },
+  { name: "Sustainabilit", count: 20, color: "bg-orange-500/10 text-orange-700 dark:text-orange-300" },
+  { name: "Motivations", count: 18, color: "bg-yellow-500/10 text-yellow-700 dark:text-yellow-300" },
+  { name: "Science and Technology", count: 14, color: "bg-cyan-500/10 text-cyan-700 dark:text-cyan-300" },
 ]
 
 export function CategoriesSection({ categories }: CategoriesSectionProps) {
