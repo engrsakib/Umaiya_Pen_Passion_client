@@ -69,7 +69,7 @@ export function HeroSection({ data }: HeroSectionProps) {
             {/* Quick stats */}
             <div className="flex items-center gap-8 pt-8 border-t border-border">
               <div>
-                <div className="text-2xl font-bold text-primary">5+</div>
+                <div className="text-2xl font-bold text-primary">1+</div>
                 <div className="text-sm text-muted-foreground">Years Experience</div>
               </div>
               <div>

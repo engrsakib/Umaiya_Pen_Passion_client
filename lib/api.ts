@@ -132,6 +132,7 @@ export async function getBlogStats(): Promise<BlogStats> {
       throw new Error("Invalid response structure")
     }
 
+
     return {
       totalPosts: stats.totalPosts,
       totalViews: stats.totalWebViews,

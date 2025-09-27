@@ -29,15 +29,16 @@ function BlogContent() {
         // Load blog stats
         try {
           const stats = await getBlogStats()
-          console.log(stats)
+          // console.log(stats)
           setBlogStats(stats)
         } catch (error) {
           console.error("Failed to load blog stats:", error)
           setBlogStats({ totalPosts: 25, totalViews: 15420 })
         }
-
+        const p = await getBlogs();
+      
         // Load posts (using mock data for now)
-        setPosts(mockPosts)
+        setPosts(p.data)
         setTotalPages(Math.ceil(mockPosts.length / 10))
       } catch (error) {
         console.error("Failed to load blog data:", error)
@@ -50,7 +51,7 @@ function BlogContent() {
   }, [])
 
   
-
+  console.log(posts)
   if (loading) {
     return (
       <div className="min-h-screen bg-background">
