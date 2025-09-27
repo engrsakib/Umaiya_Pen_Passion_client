@@ -9,6 +9,7 @@ interface AboutData {
   image: string
   achievements: string[]
   skills: string[]
+  extraCurricularActivities: string[]
 }
 
 interface AboutSectionProps {
@@ -69,6 +70,16 @@ export function AboutSection({ data }: AboutSectionProps) {
                 {data.skills.map((skill, index) => (
                   <Badge key={index} variant="secondary" className="text-sm">
                     {skill}
+                  </Badge>
+                ))}
+              </div>
+            </div>
+            <div className="space-y-4">
+              <h3 className="text-lg font-semibold">Extra Curricular Activities</h3>
+              <div className="flex flex-wrap gap-2">
+                {data.extraCurricularActivities.map((activity: any, index: any) => (
+                  <Badge key={index} variant="secondary" className="text-sm">
+                    {activity}
                   </Badge>
                 ))}
               </div>
